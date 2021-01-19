@@ -1,0 +1,38 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+body{
+  background: #EEEEEE;
+  overflow-x: scroll!important;
+}
+
+table{
+  border-collapse: separate;
+  width: 80%;
+  margin: 0 auto;
+  border-spacing: 0 12px;
+
+}
+table thead tr{
+  background: #fff;
+}
+
+
+table thead tr th{
+  padding: 18px 12px;
+  text-align: left;
+}
+
+table tbody{
+  margin-top:  100px;
+}
+
+table tbody tr{
+  background: #fff;
+}
+
+table tbody tr td{
+  padding: 16px 12px;
+  text-align: left;
+}

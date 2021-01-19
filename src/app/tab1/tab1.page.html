@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      It Garden Ltd.
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <div className='logo'>
+      <h2 size="large">It Garden Ltd.</h2>
+    </div>
+  </ion-header>
+
+ <div className='global__list'>
+    <!-- <div>
+      <ion-card-header>
+        <h3>Global</h3>
+        <ion-card-title>Coronavirus cases</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>{{info?.cases | number}}</h1>
+      </ion-card-content>
+    </div>
+
+    <div>
+      <ion-card-header>
+        <h3>Global</h3>
+        <ion-card-title>Deaths</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>{{info?.deaths | number}}</h1>
+      </ion-card-content>
+    </div>
+
+    <div>
+      <ion-card-header>
+        <h3>Global</h3>
+        <ion-card-title>Recovered</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>{{info?.recovered | number}}</h1>
+      </ion-card-content>
+    </div> -->
+
+
+    <table>
+      <caption>Global</caption>
+      <thead>
+          <tr>
+              <th>CoronaVirus cases</th>
+              <th>Deaths</th>
+              <th>Recovered</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>{{info?.cases | number}}</td>
+            <td>{{info?.deaths | number}} </td>
+            <td>{{info?.recovered | number}}</td>
+
+
+
+            <!-- <td>{{info?.country}}</td>
+            <td>{{info?.cases | number}} </td>
+            <td>{{info?.todayCases | number}} </td>
+            <td>{{info?.active | number}} </td>
+            <td>{{info?.deaths | number}} </td>
+            <td>{{info?.todayDeaths | number}}</td>
+            <td>{{info?.recovered | number}} </td>
+            <td>{{info?.critical | number}} </td> -->
+        </tr>
+      </tbody>
+      
+  </table>
+ </div>
+  
+</ion-content>
